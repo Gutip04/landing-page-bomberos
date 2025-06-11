@@ -11,6 +11,7 @@ export default {
       },
             colors: {
         crema: '#FFF1CA',
+        militar:'#708A58',
       },
      }
      ,
