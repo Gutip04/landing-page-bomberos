@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../img/LogoAlcaldiaEscudo.png" type="image/svg+xml" />
+  <title>EDL - Bomberos Puerto Boyacá</title>
+  <link href="../public/css/aos.css" rel="stylesheet" />
+  <link href="./output.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-black/90 p-4 shadow-md" data-aos="fade-down" data-aos-duration="600">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-3" data-aos="flip-right" data-aos-duration="1500" data-aos-once="false">
+        <img src="../img/LogoAlcaldiaEscudo.png" alt="Alcaldía" loading="lazy" class="h-10" />
+      </div>
+
+      <!-- Menú desktop -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#que-es" class="hover:text-yellow-400 transition-transform duration-200 hover:scale-105" data-aos="fade-down" data-aos-duration="800">¿Qué es EDL?</a>
+        <a href="#aplicacion" class="hover:text-yellow-400 transition-transform duration-200 hover:scale-105" data-aos="fade-down" data-aos-duration="1000">Aplicación en Bomberos</a>
+        <a href="#recursos" class="hover:text-yellow-400 transition-transform duration-200 hover:scale-105" data-aos="fade-down" data-aos-duration="1200">Recursos</a>
+        <a href="#contacto" class="hover:text-yellow-400 transition-transform duration-200 hover:scale-105" data-aos="fade-down" data-aos-duration="1400">Contacto</a>
+      </nav>
+
+      <!-- Botón usuario y hamburguesa alineados a la derecha -->
+      <div class="flex items-center space-x-4">
+        <!-- Ícono de usuario -->
+        <button class="rounded-full bg-slate-700 hover:text-slate-100 hover:bg-slate-500 transition-transform duration-200 hover:scale-110" data-aos="flip-left" data-aos-duration="1500" data-aos-once="false">
+          <svg class="w-8 h-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-width="2"
+              d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          </svg>
+        </button>
+
+        <!-- Botón hamburguesa -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none hover:text-slate-300" data-aos="flip-left" data-aos-duration="1700">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="md:hidden mt-4 px-4 hidden" data-aos="fade-down" data-aos-duration="1000">
+      <nav class="flex flex-col space-y-2">
+        <a href="#que-es" class="hover:text-yellow-400" data-aos="fade-down" data-aos-duration="800">¿Qué es EDL?</a>
+        <a href="#aplicacion" class="hover:text-yellow-400" data-aos="fade-down" data-aos-duration="1000">Aplicación en Bomberos</a>
+        <a href="#recursos" class="hover:text-yellow-400" data-aos="fade-down" data-aos-duration="1200">Recursos</a>
+        <a href="#contacto" class="hover:text-yellow-400" data-aos="fade-down" data-aos-duration="1400">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative bg-cover bg-center min-h-screen flex items-center justify-center text-center py-20 px-4" style="background-image: url('../img/puerto-boyaca.jpg');" data-aos="zoom-in" data-aos-duration="1500">
+    <!-- Overlay oscuro -->
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+    <div class="bg-black/60 p-6 rounded-xl flex flex-col justify-between w-full max-w-md sm:max-w-lg md:w-[500px] h-[300px] sm:h-[350px] md:h-[400px] transform hover:scale-105 transition-transform duration-300 backdrop-blur-md" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+      <div>
+        <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">Evaluación del Desempeño Laboral</h1>
+      </div>
+      <p class="text-base sm:text-lg">Este modelo de evaluación promueve la mejora continua del desempeño laboral.
+        Permite establecer metas claras, realizar seguimiento periódico y reconocer los logros alcanzados.
+      </p>
+      <a href="#que-es" class="bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-300 inline-block mt-6" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+        Conoce más
+      </a>
+    </div>
+  </section>
+
+  <!-- ¿Qué es EDL? -->
+  <section id="que-es" class="relative bg-cover min-h-screen flex items-center justify-center py-16 px-4 sm:py-20" style="background-image: url('../img/carrobomberos.jpg');" >
+    <!-- Overlay oscuro -->
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm z-0"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 px-2 sm:px-4 py-10">
+
+      <!-- Imagen con animación -->
+      <div class="overflow-hidden rounded-xl shadow-lg" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+        <img
+          src="../img/carrobomberos.jpg"
+          alt="Bomberos en acción"
+          loading="lazy"
+          class="w-full h-full object-cover opacity-70"
+        />
+      </div>
+
+      <!-- Contenido informativo -->
+      <div class="bg-black/50 backdrop-blur-md rounded-xl p-6 sm:p-8 space-y-4 sm:space-y-6 text-white shadow-lg hover:shadow-2xl transform transition duration-300"
+        data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+
+        <h2 class="text-2xl sm:text-3xl font-extrabold leading-tight">
+          ¿Qué es el Sistema Tipo de <br class="hidden md:block" />Evaluación del Desempeño?
+        </h2>
+
+        <p class="text-base sm:text-lg opacity-90">
+          Un mecanismo formal de la CNSC que mide el cumplimiento de metas y compromisos laborales de los servidores públicos, con seguimiento continuo y calificación anual.
+        </p>
+
+        <ul class="space-y-2 sm:space-y-3">
+          <li class="flex items-start" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+            <span class="text-yellow-400 mr-3 text-xl sm:text-2xl">✔️</span>
+            <span>Define metas concertadas entre empleado y supervisor.</span>
+          </li>
+          <li class="flex items-start" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
+            <span class="text-yellow-400 mr-3 text-xl sm:text-2xl">📊</span>
+            <span>Evalúa logros con indicadores claros y medibles.</span>
+          </li>
+          <li class="flex items-start" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+            <span class="text-yellow-400 mr-3 text-xl sm:text-2xl">🎯</span>
+            <span>Incorpora competencias para el desarrollo integral.</span>
+          </li>
+          <li class="flex items-start" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="900">
+            <span class="text-yellow-400 mr-3 text-xl sm:text-2xl">✅</span>
+            <span>Incluye autoevaluación y retroalimentación continua.</span>
+          </li>
+        </ul>
+
+        <p class="text-sm sm:text-base opacity-70 italic mt-6">Fuente: CNSC Colombia</p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Aplicación en Bomberos -->
+  <section id="aplicacion" class="bg-black/90 py-16 px-6" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
+    <div class="max-w-5xl mx-auto text-center space-y-8">
+
+      <h3 class="text-3xl font-extrabold mb-6">Aplicación en el Cuerpo Oficial de Bomberos</h3>
+
+      <p class="text-lg max-w-3xl mx-auto">
+        El Sistema EDL se adapta a las funciones específicas del cuerpo de bomberos, evaluando aspectos técnicos, operativos y administrativos para mejorar la calidad del servicio y la seguridad ciudadana.
+      </p>
+
+      <img
+        src="../img/bomberos2.jpg"
+        alt="Bomberos trabajando"
+        class="mx-auto rounded-lg shadow-lg max-w-full w-96 mt-8"
+        loading="lazy"
+        data-aos="zoom-in" data-aos-duration="1200"
+      />
+
+    </div>
+  </section>
+
+  <!-- Recursos -->
+  <section id="recursos" class="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 py-16 px-4" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="400">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <article class="bg-white/90 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+        <h4 class="text-xl font-semibold mb-2">Manual EDL</h4>
+        <p class="text-gray-800">Descarga el manual completo para entender el proceso de evaluación del desempeño.</p>
+        <a href="#" class="text-yellow-600 hover:underline mt-4 inline-block">Descargar PDF</a>
+      </article>
+
+      <article class="bg-white/90 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="700">
+        <h4 class="text-xl font-semibold mb-2">Plantillas de Evaluación</h4>
+        <p class="text-gray-800">Utiliza las plantillas oficiales para el registro de metas y seguimiento.</p>
+        <a href="#" class="text-yellow-600 hover:underline mt-4 inline-block">Ver Plantillas</a>
+      </article>
+
+      <article class="bg-white/90 rounded-lg p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="900">
+        <h4 class="text-xl font-semibold mb-2">Capacitaciones</h4>
+        <p class="text-gray-800">Accede a videos y seminarios para capacitar al personal en la implementación del EDL.</p>
+        <a href="#" class="text-yellow-600 hover:underline mt-4 inline-block">Acceder</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="bg-gray-900 py-16 px-6" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="500">
+    <div class="max-w-4xl mx-auto text-center text-white space-y-8">
+      <h3 class="text-3xl font-extrabold">Contacto</h3>
+      <p>Para más información o consultas, comunícate con nosotros.</p>
+      <form action="#" method="POST" class="space-y-4 max-w-md mx-auto" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+        <input type="text" name="nombre" placeholder="Nombre" required
+          class="w-full px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 focus:border-yellow-400 focus:outline-none" />
+        <input type="email" name="email" placeholder="Correo electrónico" required
+          class="w-full px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 focus:border-yellow-400 focus:outline-none" />
+        <textarea name="mensaje" rows="4" placeholder="Mensaje" required
+          class="w-full px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 focus:border-yellow-400 focus:outline-none resize-none"></textarea>
+        <button type="submit" class="bg-yellow-400 text-black px-6 py-2 rounded font-semibold hover:bg-yellow-300 transition-colors duration-300">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black/90 text-white text-center py-4" data-aos="fade-up" data-aos-duration="1000">
+    <p>© 2024 Cuerpo Oficial de Bomberos Puerto Boyacá - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="../public/js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: false, // para que se anime cada vez que hagas scroll
+      mirror: false,
+    });
+
+    // Código para toggle menú móvil
+    const btnToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    btnToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
